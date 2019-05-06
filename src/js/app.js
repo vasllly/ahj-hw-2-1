@@ -28,7 +28,7 @@ for (let index = 0; index < 16; index += 1) {
 let id = random(0, 16);
 let cellEl = bindToDOM(document.querySelector(`div[data-id="${id}"]`));
 const goblin = document.createElement('img');
-goblin.setAttribute('src', '../src/img/goblin.png');
+goblin.setAttribute('src', './img/goblin.png');
 goblin.setAttribute('height', '100px');
 goblin.setAttribute('width', '100px');
 cellEl.appendChild(goblin);
@@ -43,4 +43,4 @@ setInterval(() => {
   id = newId;
   cellEl = bindToDOM(document.querySelector(`div[data-id="${id}"]`));
   cellEl.appendChild(goblin);
-}, 500);
+}, 5000);
