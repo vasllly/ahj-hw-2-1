@@ -1,0 +1,53 @@
+{
+  "name": "ahj-hw-2-1",
+  "version": "1.0.0",
+  "description": "HW",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "jest --coverage --passWithNoTests",
+    "lint": "eslint .",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasllly/ahj-hw-2-1.git"
+  },
+  "keywords": [
+    "hw"
+  ],
+  "author": "Ganja Vasiliy <vasllly219@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasllly/ahj-hw-2-1/issues"
+  },
+  "homepage": "https://github.com/vasllly/ahj-hw-2-1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.1.0",
+    "jest": "^24.5.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  }
+}
