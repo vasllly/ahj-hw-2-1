@@ -29,7 +29,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
               limit: 8192,
             },
@@ -42,7 +42,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      // favicon: './src/favicon.ico', // раскоментировать при необходимости
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
