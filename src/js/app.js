@@ -43,4 +43,4 @@ setInterval(() => {
   id = newId;
   cellEl = bindToDOM(document.querySelector(`div[data-id="${id}"]`));
   cellEl.appendChild(goblin);
-}, 5000);
+}, 500);
